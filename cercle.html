@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Le Cercle midi. — Saint-Tropez</title>
+    <meta name="description"
+        content="Le Cercle midi. : accès anticipé aux nouvelles silhouettes, invitations à l'atelier de Saint-Tropez, et un mot personnel avant chaque collection.">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+
+    <link rel="preload" href="fonts/CormorantGaramond-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/DMSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/cercle.css">
+</head>
+
+<body class="is-loading">
+
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header" data-header>
+        <div class="site-header__inner">
+            <button class="menu-toggle" data-menu-toggle type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__label">Menu</span>
+            </button>
+
+            <a href="index.html" class="wordmark" aria-label="midi. — accueil">midi.</a>
+
+            <div class="header-actions">
+                <div class="header-lang" data-header-lang>
+                    <span class="header-lang__current" aria-current="page">FR</span>
+                    <span class="header-lang__sep">/</span>
+                    <a href="en/cercle.html" class="header-lang__link">EN</a>
+                </div>
+                <a href="panier.html" class="header-link header-link--cart">Panier <span>(0)</span></a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="site-nav" class="site-nav" data-site-nav aria-hidden="true">
+        <ul class="site-nav__list">
+            <li class="site-nav__item"><a href="index.html#collection">Collection</a></li>
+            <li class="site-nav__item"><a href="boutique.html">Boutique</a></li>
+            <li class="site-nav__item"><a href="index.html#matieres">Matières</a></li>
+            <li class="site-nav__item"><a href="maison.html">La Maison</a></li>
+            <li class="site-nav__item"><a href="index.html#quote">Savoir-faire</a></li>
+            <li class="site-nav__item"><a href="cercle.html">Le Cercle</a></li>
+            <li class="site-nav__item"><a href="contact.html">Contact</a></li>
+            <li class="site-nav__item"><a href="nos-adresses.html">Nos Adresses</a></li>
+        </ul>
+        <div class="site-nav__foot">
+            <p>Maison midi — Saint-Tropez, Golfe de Saint-Tropez</p>
+        </div>
+    </nav>
+
+    <main id="contenu">
+
+        <section class="lc-hero" id="lc-hero" data-lc-hero>
+            <div class="lc-hero__media" data-lc-hero-media>
+                <picture>
+                    <source type="image/webp"
+                        srcset="images/cercle-hero-480.webp 480w, images/cercle-hero-768.webp 768w, images/cercle-hero-1024.webp 1024w, images/cercle-hero-1402.webp 1402w"
+                        sizes="100vw">
+                    <img src="images/cercle-hero.jpg"
+                        alt="Papier à lettres midi. et enveloppe cirée sur une table de l'atelier de Saint-Tropez"
+                        width="1402" height="1122" fetchpriority="high" decoding="async">
+                </picture>
+            </div>
+            <div class="lc-hero__veil"></div>
+            <div class="lc-hero__content">
+                <p class="eyebrow" data-lc-reveal>Le Cercle midi.</p>
+                <h1 class="lc-hero__title" data-lc-reveal>Une conversation<br>privée.</h1>
+                <p class="lc-hero__sub" data-lc-reveal>Avant chaque collection, une poignée de femmes reçoit la nouvelle
+                    avant tout le monde. Pas une newsletter — une conversation.</p>
+            </div>
+        </section>
+
+        <section class="lc-manifeste" id="lc-manifeste">
+            <p class="eyebrow" data-reveal>Ce Que C'est</p>
+            <p class="lc-manifeste__text" data-reveal>
+                Le Cercle n'est pas un formulaire d'inscription. C'est une liste
+                tenue à la main, relue avant chaque envoi, gardée <em>volontairement
+                    courte</em>. On y entre par choix, jamais par défaut — et on y
+                reste parce qu'on y trouve ce qu'on ne trouve nulle part ailleurs.
+            </p>
+        </section>
+
+        <section class="lc-benefits" id="lc-benefits">
+            <p class="eyebrow" data-reveal>Ce Que Vous Recevez</p>
+            <div class="lc-benefits__grid">
+                <article class="lc-benefit" data-lc-benefit>
+                    <p class="lc-benefit__num">01</p>
+                    <h3 class="lc-benefit__title">Accès Anticipé</h3>
+                    <p class="lc-benefit__text">Chaque silhouette vous parvient 48 heures avant sa mise en ligne — le
+                        temps de choisir sans se presser.</p>
+                </article>
+                <article class="lc-benefit" data-lc-benefit>
+                    <p class="lc-benefit__num">02</p>
+                    <h3 class="lc-benefit__title">Rendez-vous Atelier</h3>
+                    <p class="lc-benefit__text">Deux fois par an, une invitation à visiter l'atelier de Saint-Tropez,
+                        sur les mesures de qui souhaite venir.</p>
+                </article>
+                <article class="lc-benefit" data-lc-benefit>
+                    <p class="lc-benefit__num">03</p>
+                    <h3 class="lc-benefit__title">Mot de la Maison</h3>
+                    <p class="lc-benefit__text">Avant chaque collection, une lettre de Camille — jamais un communiqué,
+                        toujours un mot personnel.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="lc-invite" id="lc-invite" data-lc-invite>
+            <div class="lc-invite__pin" data-lc-invite-pin>
+                <p class="eyebrow lc-invite__eyebrow" data-lc-invite-eyebrow>L'Invitation</p>
+
+                <div class="lc-invite__stage" data-lc-invite-stage>
+                    <div class="lc-invite__envelope" data-lc-invite-envelope>
+                        <div class="lc-invite__body"></div>
+                        <div class="lc-invite__flap" data-lc-invite-flap>
+                            <span class="lc-invite__seal" data-lc-invite-seal>m.</span>
+                        </div>
+                        <div class="lc-invite__card" data-lc-invite-card>
+                            <p class="lc-invite__card-eyebrow">Maison midi</p>
+                            <p class="lc-invite__card-text">Vous êtes conviée.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lc-form" id="lc-form">
+            <p class="eyebrow" data-reveal>Rejoindre</p>
+            <h2 class="lc-form__title" data-reveal>Entrer dans le Cercle.</h2>
+            <form class="lc-form__form" data-reveal>
+                <label class="visually-hidden" for="lc-name">Prénom</label>
+                <input class="lc-form__input" id="lc-name" type="text" placeholder="Votre prénom"
+                    autocomplete="given-name" required>
+
+                <label class="visually-hidden" for="lc-email">Adresse email</label>
+                <input class="lc-form__input" id="lc-email" type="email" placeholder="Votre adresse email"
+                    autocomplete="email" required>
+
+                <button class="lc-form__submit" type="submit">Rejoindre le Cercle</button>
+            </form>
+            <p class="lc-form__legal">Une confirmation vous sera envoyée par email. Vous pouvez quitter le Cercle à tout
+                moment.</p>
+            <a href="index.html#collection" class="text-link lc-form__link" data-reveal>Découvrir la collection →</a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__top">
+            <a href="index.html" class="wordmark wordmark--footer">midi.</a>
+            <div class="site-footer__cols">
+                <div class="site-footer__col">
+                    <p class="site-footer__title">La Maison</p>
+                    <a href="index.html#collection">Collection</a>
+                    <a href="boutique.html">Boutique</a>
+                    <a href="maison.html">Savoir-faire</a>
+                    <a href="nos-adresses.html">Nos Adresses</a>
+                </div>
+                <div class="site-footer__col">
+                    <p class="site-footer__title">Assistance</p>
+                    <a href="#">Livraison</a>
+                    <a href="#">Retours</a>
+                    <a href="contact.html">Nous contacter</a>
+                </div>
+                <div class="site-footer__col">
+                    <p class="site-footer__title">Suivre</p>
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <p>© <span data-year></span> Maison midi — Saint-Tropez</p>
+            <p>Mentions légales · CGV · Confidentialité</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/cercle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Contact — midi., Saint-Tropez</title>
+    <meta name="description"
+        content="Contact the maison midi.: atelier address, phone, email, and a direct message to the Saint-Tropez team.">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+
+    <link rel="preload" href="../fonts/CormorantGaramond-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/DMSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body class="is-loading">
+
+    <a class="skip-link" href="#contenu">Skip to content</a>
+
+    <header class="site-header" data-header>
+        <div class="site-header__inner">
+            <button class="menu-toggle" data-menu-toggle type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__label">Menu</span>
+            </button>
+
+            <a href="index.html" class="wordmark" aria-label="midi. — home">midi.</a>
+
+            <div class="header-actions">
+                <div class="header-lang" data-header-lang>
+                    <a href="../contact.html" class="header-lang__link">FR</a>
+                    <span class="header-lang__sep">/</span>
+                    <span class="header-lang__current" aria-current="page">EN</span>
+                </div>
+                <a href="panier.html" class="header-link header-link--cart">Cart <span>(0)</span></a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="site-nav" class="site-nav" data-site-nav aria-hidden="true">
+        <ul class="site-nav__list">
+            <li class="site-nav__item"><a href="index.html#collection">Collection</a></li>
+            <li class="site-nav__item"><a href="boutique.html">Shop</a></li>
+            <li class="site-nav__item"><a href="index.html#matieres">Materials</a></li>
+            <li class="site-nav__item"><a href="maison.html">The House</a></li>
+            <li class="site-nav__item"><a href="index.html#quote">Craft</a></li>
+            <li class="site-nav__item"><a href="cercle.html">The Circle</a></li>
+            <li class="site-nav__item"><a href="contact.html">Contact</a></li>
+            <li class="site-nav__item"><a href="nos-adresses.html">Our Addresses</a></li>
+        </ul>
+        <div class="site-nav__foot">
+            <p>Maison midi — Saint-Tropez, Gulf of Saint-Tropez</p>
+        </div>
+    </nav>
+
+    <main id="contenu">
+
+        <section class="ct-split" id="ct-split" data-ct-split>
+            <div class="ct-split__media" data-ct-media>
+                <picture>
+                    <source type="image/webp"
+                        srcset="../images/contact-hero-480.webp 480w, ../images/contact-hero-768.webp 768w, ../images/contact-hero-1024.webp 1024w, ../images/contact-hero-1536.webp 1536w"
+                        sizes="(min-width: 900px) 55vw, 100vw">
+                    <img src="../images/contact-hero.jpg"
+                        alt="Counter of the midi. atelier in Saint-Tropez, sign carved in stone" width="1536"
+                        height="1024" fetchpriority="high" decoding="async">
+                </picture>
+            </div>
+
+            <div class="ct-split__panel">
+                <p class="eyebrow" data-ct-reveal>Contact</p>
+                <h1 class="ct-split__title" data-ct-reveal>A question,<br>a wish,<br>an appointment.</h1>
+                <p class="ct-split__sub" data-ct-reveal>The atelier replies personally, within 24 hours.</p>
+
+                <div class="ct-info" data-ct-info>
+                    <div class="ct-info__item" data-ct-info-item>
+                        <p class="ct-info__label">Atelier</p>
+                        <p class="ct-info__value">Chemin des Salins<br>83990 Saint-Tropez</p>
+                    </div>
+                    <div class="ct-info__item" data-ct-info-item>
+                        <p class="ct-info__label">Phone</p>
+                        <a class="ct-info__value ct-info__link" href="tel:+33494971234">+33 4 94 97 12 34</a>
+                    </div>
+                    <div class="ct-info__item" data-ct-info-item>
+                        <p class="ct-info__label">Email</p>
+                        <a class="ct-info__value ct-info__link"
+                            href="mailto:atelier@midi-sainttropez.com">atelier@midi-sainttropez.com</a>
+                    </div>
+                    <div class="ct-info__item" data-ct-info-item>
+                        <p class="ct-info__label">Hours</p>
+                        <p class="ct-info__value">Tue – Sat, 10am – 6pm<br>By appointment</p>
+                    </div>
+                </div>
+
+                <form class="ct-form" data-ct-reveal>
+                    <label class="visually-hidden" for="ct-name">Name</label>
+                    <input class="ct-form__input" id="ct-name" type="text" placeholder="Your name" autocomplete="name"
+                        required>
+
+                    <label class="visually-hidden" for="ct-email">Email</label>
+                    <input class="ct-form__input" id="ct-email" type="email" placeholder="Your email address"
+                        autocomplete="email" required>
+
+                    <label class="visually-hidden" for="ct-message">Message</label>
+                    <textarea class="ct-form__input ct-form__textarea" id="ct-message" rows="3"
+                        placeholder="Your message" required></textarea>
+
+                    <button class="ct-form__submit" type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="ct-gallery" id="ct-gallery">
+            <p class="eyebrow" data-reveal>The Atelier in Pictures</p>
+            <div class="ct-gallery__row" data-ct-gallery>
+                <figure class="ct-gallery__item" data-ct-gallery-item>
+                    <picture>
+                        <source type="image/webp"
+                            srcset="../images/contact-01-320.webp 320w, ../images/contact-01-480.webp 480w, ../images/contact-01-640.webp 640w, ../images/contact-01-900.webp 900w"
+                            sizes="(min-width: 680px) 26vw, 90vw">
+                        <img src="../images/contact-01.jpg"
+                            alt="Fitting room of the midi. atelier, dress on mannequin and bouclé armchairs"
+                            width="1402" height="1122" loading="lazy" decoding="async">
+                    </picture>
+                    <figcaption>The fitting room</figcaption>
+                </figure>
+                <figure class="ct-gallery__item" data-ct-gallery-item>
+                    <picture>
+                        <source type="image/webp"
+                            srcset="../images/contact-02-320.webp 320w, ../images/contact-02-480.webp 480w, ../images/contact-02-640.webp 640w, ../images/contact-02-900.webp 900w"
+                            sizes="(min-width: 680px) 26vw, 90vw">
+                        <img src="../images/contact-02.jpg"
+                            alt="Stone reception desk of the midi. atelier, sign on the wall" width="1536" height="1024"
+                            loading="lazy" decoding="async">
+                    </picture>
+                    <figcaption>The reception desk</figcaption>
+                </figure>
+                <figure class="ct-gallery__item" data-ct-gallery-item>
+                    <picture>
+                        <source type="image/webp"
+                            srcset="../images/contact-03-320.webp 320w, ../images/contact-03-480.webp 480w, ../images/contact-03-640.webp 640w, ../images/contact-03-900.webp 900w"
+                            sizes="(min-width: 680px) 26vw, 90vw">
+                        <img src="../images/contact-03.jpg"
+                            alt="View of the port of Saint-Tropez from the open door of the midi. atelier" width="1536"
+                            height="1024" loading="lazy" decoding="async">
+                    </picture>
+                    <figcaption>The view from the atelier</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__top">
+            <a href="index.html" class="wordmark wordmark--footer">midi.</a>
+            <div class="site-footer__cols">
+                <div class="site-footer__col">
+                    <p class="site-footer__title">The House</p>
+                    <a href="index.html#collection">Collection</a>
+                    <a href="boutique.html">Shop</a>
+                    <a href="maison.html">Craft</a>
+                    <a href="nos-adresses.html">Our Addresses</a>
+                </div>
+                <div class="site-footer__col">
+                    <p class="site-footer__title">Support</p>
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="site-footer__col">
+                    <p class="site-footer__title">Follow</p>
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <p>© <span data-year></span> Maison midi — Saint-Tropez</p>
+            <p>Legal Notice · Terms · Privacy</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+
+</html>

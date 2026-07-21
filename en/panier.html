@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Cart — midi., Saint-Tropez</title>
+    <meta name="description" content="Your midi. cart — review your pieces before proceeding to secure checkout.">
+    <meta name="robots" content="noindex">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="preconnect" href="https://js.stripe.com" crossorigin>
+
+    <link rel="preload" href="../fonts/CormorantGaramond-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/DMSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/panier.css">
+</head>
+
+<body class="is-loading">
+
+    <a class="skip-link" href="#contenu">Skip to content</a>
+
+    <header class="site-header" data-header>
+        <div class="site-header__inner">
+            <button class="menu-toggle" data-menu-toggle type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__label">Menu</span>
+            </button>
+
+            <a href="index.html" class="wordmark" aria-label="midi. — home">midi.</a>
+
+            <div class="header-actions">
+                <div class="header-lang" data-header-lang>
+                    <a href="../panier.html" class="header-lang__link">FR</a>
+                    <span class="header-lang__sep">/</span>
+                    <span class="header-lang__current" aria-current="page">EN</span>
+                </div>
+                <a href="panier.html" class="header-link header-link--cart" aria-current="page">Cart
+                    <span>(0)</span></a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="site-nav" class="site-nav" data-site-nav aria-hidden="true">
+        <ul class="site-nav__list">
+            <li class="site-nav__item"><a href="index.html#collection">Collection</a></li>
+            <li class="site-nav__item"><a href="boutique.html">Shop</a></li>
+            <li class="site-nav__item"><a href="index.html#matieres">Materials</a></li>
+            <li class="site-nav__item"><a href="maison.html">The House</a></li>
+            <li class="site-nav__item"><a href="index.html#quote">Craft</a></li>
+            <li class="site-nav__item"><a href="cercle.html">The Circle</a></li>
+            <li class="site-nav__item"><a href="contact.html">Contact</a></li>
+            <li class="site-nav__item"><a href="nos-adresses.html">Our Addresses</a></li>
+        </ul>
+        <div class="site-nav__foot">
+            <p>Maison midi — Saint-Tropez, Gulf of Saint-Tropez</p>
+        </div>
+    </nav>
+
+    <main id="contenu">
+
+        <section class="pn-page" id="pn-page">
+            <div class="pn-heading">
+                <p class="eyebrow" data-pn-reveal>Your Selection</p>
+                <h1 class="pn-heading__title" data-pn-reveal>Cart</h1>
+            </div>
+
+            <div class="pn-success" data-pn-success hidden>
+                <p class="eyebrow">Order Confirmed</p>
+                <h2>Thank you. It's noted at the atelier.</h2>
+                <p>A confirmation will be sent by email. See you soon, in Saint-Tropez or elsewhere.</p>
+                <a href="boutique.html" class="text-link">Continue exploring the collection →</a>
+            </div>
+
+            <div class="pn-layout" data-pn-layout>
+                <div class="pn-items" data-pn-items></div>
+
+                <aside class="pn-summary" data-pn-summary>
+                    <h2 class="pn-summary__title">Summary</h2>
+                    <div class="pn-summary__row">
+                        <span>Subtotal</span>
+                        <span data-pn-subtotal>€0</span>
+                    </div>
+                    <div class="pn-summary__row pn-summary__row--muted">
+                        <span>Shipping</span>
+                        <span>Calculated at the next step</span>
+                    </div>
+                    <div class="pn-summary__row pn-summary__row--total">
+                        <span>Total</span>
+                        <span data-pn-total>€0</span>
+                    </div>
+
+                    <button class="pn-checkout" type="button" data-pn-checkout>Proceed to Payment</button>
+                    <p class="pn-secure">
+                        <span class="pn-secure__lock" aria-hidden="true"></span>
+                        Secure payment by Stripe
+                    </p>
+                    <p class="pn-checkout-note" data-pn-checkout-note hidden></p>
+                </aside>
+            </div>
+
+            <div class="pn-empty" data-pn-empty hidden>
+                <p class="pn-empty__text">Your cart is empty.</p>
+                <a href="boutique.html" class="text-link">Discover the collection →</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__top">
+            <a href="index.html" class="wordmark wordmark--footer">midi.</a>
+            <div class="site-footer__cols">
+                <div class="site-footer__col">
+                    <p class="site-footer__title">The House</p>
+                    <a href="index.html#collection">Collection</a>
+                    <a href="boutique.html">Shop</a>
+                    <a href="maison.html">Craft</a>
+                    <a href="nos-adresses.html">Our Addresses</a>
+                </div>
+                <div class="site-footer__col">
+                    <p class="site-footer__title">Support</p>
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="site-footer__col">
+                    <p class="site-footer__title">Follow</p>
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <p>© <span data-year></span> Maison midi — Saint-Tropez</p>
+            <p>Legal Notice · Terms · Privacy</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/panier.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,562 @@
+/* ==========================================================================
+   midi. — global.css
+   Reset, design tokens, typographie, header / nav / footer partagés
+   ========================================================================== */
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("../fonts/CormorantGaramond-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("../fonts/CormorantGaramond-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("../fonts/CormorantGaramond-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("../fonts/CormorantGaramond-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("../fonts/DMSans-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("../fonts/DMSans-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* Couleurs — Maison midi */
+    --c-ombre: #0e0f0c;
+    /* fond sombre — ombre sous les pins */
+    --c-ombre-soft: #16180f;
+    --c-solaire: #edede4;
+    /* blanc pierre délavée */
+    --c-solaire-dim: #d9d8ca;
+    --c-rade: #1c3f66;
+    /* bleu marine profond */
+    --c-or: #c6a15b;
+    /* or brûlé — laiton de coque */
+    --c-or-vif: #dab876;
+    --c-olive: #6b7563;
+    /* olive poussière */
+
+    --c-text: var(--c-solaire);
+    --c-text-dim: rgba(237, 237, 228, 0.62);
+    --c-bg: var(--c-ombre);
+    --c-line: rgba(237, 237, 228, 0.14);
+
+    /* Typographie */
+    --f-display: "Cormorant Garamond", "Times New Roman", serif;
+    --f-body: "DM Sans", -apple-system, "Segoe UI", sans-serif;
+
+    --fs-hero: clamp(3rem, 3.4vw + 2.2rem, 8.5rem);
+    --fs-xl: clamp(2.2rem, 2vw + 1.6rem, 4.2rem);
+    --fs-lg: clamp(1.6rem, 1vw + 1.3rem, 2.4rem);
+    --fs-body: clamp(1rem, 0.2vw + 0.95rem, 1.15rem);
+    --fs-caption: 0.72rem;
+
+    /* Rythme */
+    --space-section: clamp(5rem, 10vw, 10rem);
+    --pad-inline: clamp(1.25rem, 5vw, 4rem);
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+    --header-h: 84px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--c-bg);
+    color-scheme: dark;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    background: var(--c-bg);
+    color: var(--c-text);
+    font-family: var(--f-body);
+    font-size: var(--fs-body);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+blockquote,
+figure {
+    margin: 0;
+}
+
+button,
+input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+}
+
+::selection {
+    background: var(--c-or);
+    color: var(--c-ombre);
+}
+
+:focus-visible {
+    outline: 1px solid var(--c-or);
+    outline-offset: 4px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+.skip-link {
+    position: fixed;
+    top: -100%;
+    left: 1rem;
+    z-index: 200;
+    padding: 0.75rem 1.25rem;
+    background: var(--c-solaire);
+    color: var(--c-ombre);
+    transition: top 0.2s var(--ease-out);
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+.eyebrow {
+    font-family: var(--f-body);
+    font-size: var(--fs-caption);
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--c-or);
+}
+
+.text-link {
+    display: inline-block;
+    font-size: var(--fs-caption);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--c-line);
+    padding-bottom: 0.4rem;
+    transition: border-color 0.3s var(--ease-out), opacity 0.3s var(--ease-out);
+}
+
+.text-link:hover {
+    border-color: var(--c-or);
+}
+
+/* ---------------------------------- Header ---------------------------------- */
+
+.site-header {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 100;
+    height: var(--header-h);
+    transform: translateY(0);
+    transition: transform 0.5s var(--ease-in-out), background-color 0.4s ease;
+}
+
+.site-header[data-header-hidden="true"] {
+    transform: translateY(-100%);
+}
+
+.site-header[data-header-solid="true"] {
+    background: rgba(14, 15, 12, 0.86);
+    backdrop-filter: blur(10px);
+}
+
+.site-header__inner {
+    height: 100%;
+    padding-left: max(var(--pad-inline), env(safe-area-inset-left));
+    padding-right: max(var(--pad-inline), env(safe-area-inset-right));
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wordmark {
+    justify-self: center;
+    font-family: var(--f-display);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.6rem;
+    letter-spacing: 0.02em;
+}
+
+.wordmark--footer {
+    font-size: 2.4rem;
+    justify-self: start;
+}
+
+.menu-toggle {
+    justify-self: start;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+}
+
+.menu-toggle__bar {
+    display: block;
+    width: 22px;
+    height: 1px;
+    background: var(--c-text);
+    transition: transform 0.4s var(--ease-in-out), opacity 0.3s ease;
+}
+
+.menu-toggle__bar+.menu-toggle__bar {
+    margin-top: 5px;
+}
+
+.menu-toggle__label {
+    font-size: var(--fs-caption);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle__bar:first-child {
+    transform: translateY(3px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle__bar:last-child {
+    transform: translateY(-3px) rotate(-45deg);
+}
+
+.header-actions {
+    justify-self: end;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.header-lang {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: var(--fs-caption);
+    letter-spacing: 0.1em;
+}
+
+.header-lang__current {
+    color: var(--c-or);
+    font-weight: 500;
+}
+
+.header-lang__link {
+    color: var(--c-text-dim);
+    transition: color 0.25s var(--ease-out);
+}
+
+.header-lang__link:hover {
+    color: var(--c-solaire);
+}
+
+.header-lang__sep {
+    color: var(--c-line);
+}
+
+.header-link {
+    font-size: var(--fs-caption);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.header-link span {
+    color: var(--c-text-dim);
+}
+
+/* ---------------------------------- Nav overlay ---------------------------------- */
+
+.site-nav {
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: calc(var(--header-h) + 2rem) max(var(--pad-inline), env(safe-area-inset-right)) 3rem max(var(--pad-inline), env(safe-area-inset-left));
+    background: var(--c-ombre);
+    visibility: hidden;
+}
+
+.site-nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.site-nav__item a {
+    display: inline-block;
+    font-family: var(--f-display);
+    font-weight: 300;
+    font-size: clamp(2.4rem, 6vw, 5rem);
+    line-height: 1.15;
+    color: var(--c-text);
+    transition: color 0.3s var(--ease-out);
+}
+
+.site-nav__item a:hover {
+    color: var(--c-or);
+}
+
+.site-nav__foot {
+    color: var(--c-text-dim);
+    font-size: var(--fs-caption);
+    letter-spacing: 0.08em;
+}
+
+/* ---------------------------------- Footer ---------------------------------- */
+
+.site-footer {
+    padding-top: var(--space-section);
+    padding-bottom: 2.5rem;
+    padding-left: max(var(--pad-inline), env(safe-area-inset-left));
+    padding-right: max(var(--pad-inline), env(safe-area-inset-right));
+    background: var(--c-ombre-soft);
+    border-top: 1px solid var(--c-line);
+}
+
+.site-footer__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-bottom: 3.5rem;
+}
+
+.site-footer__cols {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(2.5rem, 6vw, 6rem);
+}
+
+.site-footer__col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.site-footer__title {
+    font-size: var(--fs-caption);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--c-or);
+    margin-bottom: 0.4rem;
+}
+
+.site-footer__col a {
+    color: var(--c-text-dim);
+    transition: color 0.3s var(--ease-out);
+}
+
+.site-footer__col a:hover {
+    color: var(--c-text);
+}
+
+.site-footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--c-line);
+    font-size: var(--fs-caption);
+    color: var(--c-text-dim);
+    letter-spacing: 0.06em;
+}
+
+@media (max-width: 640px) {
+    .site-header__inner {
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .header-link--cart span {
+        display: none;
+    }
+}
+
+@media (hover: none) {
+
+    .menu-toggle,
+    .header-link,
+    .site-footer__col a {
+        padding-block: 0.25rem;
+    }
+}
+
+/* ---------------------------------- Bannière cookies ---------------------------------- */
+/* Injectée par global.js sur toutes les pages (FR + EN). z-index 80 :
+   au-dessus du contenu normal, mais sous le menu plein écran (90) — si le
+   menu s'ouvre, il recouvre naturellement la bannière plutôt que de la
+   laisser flotter par-dessus. */
+
+/* ---------------------------------- Bannière cookies ---------------------------------- */
+/* Injectée par global.js sur toutes les pages (FR + EN). z-index 80 :
+   au-dessus du contenu normal, mais sous le menu plein écran (90) — si le
+   menu s'ouvre, il recouvre naturellement la bannière plutôt que de la
+   laisser flotter par-dessus.
+   Effet verre dépoli SOMBRE plutôt que blanc : un fond blanc/translucide
+   jurerait sur un site presque noir. Même esprit (flou, finesse,
+   discrétion), adapté à la palette réelle du site. */
+
+.cookie-banner {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 80;
+    max-width: 22rem;
+    width: calc(100% - 3rem);
+    padding: 1.4rem 1.5rem;
+    background: rgba(14, 15, 12, 0.7);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid rgba(237, 237, 228, 0.12);
+    border-radius: 3px;
+    box-shadow: 0 24px 48px -24px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cookie-banner__text {
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: var(--c-text-dim);
+}
+
+.cookie-banner__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+.cookie-banner__accept {
+    padding: 0.65rem 1.3rem;
+    border: 1px solid var(--c-or);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--c-or);
+    font-size: var(--fs-caption);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s var(--ease-out), color 0.3s var(--ease-out);
+}
+
+.cookie-banner__accept:hover {
+    background: var(--c-or);
+    color: var(--c-ombre);
+}
+
+.cookie-banner__decline {
+    font-size: var(--fs-caption);
+    letter-spacing: 0.06em;
+    color: var(--c-text-dim);
+    opacity: 0.75;
+    cursor: pointer;
+    transition: opacity 0.25s var(--ease-out), color 0.25s var(--ease-out);
+}
+
+.cookie-banner__decline:hover {
+    opacity: 1;
+    color: var(--c-solaire);
+}
+
+@media (max-width: 560px) {
+    .cookie-banner {
+        right: 0.75rem;
+        left: 0.75rem;
+        bottom: 0.75rem;
+        width: auto;
+        max-width: none;
+        padding: 1.15rem 1.25rem;
+    }
+
+    .cookie-banner__actions {
+        justify-content: space-between;
+    }
+}
+
+/* [hidden] doit toujours l'emporter, même sur un élément dont la classe
+   définit son propre display (grid/flex) — sans ça, [hidden] et .ma-classe
+   ont la même spécificité, et selon l'ordre des règles, .ma-classe peut
+   gagner et laisser l'élément visible malgré l'attribut. Règle globale,
+   corrige ce piège une fois pour toutes sur tout le site. */
+[hidden] {
+    display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>midi. — Maison midi, Saint-Tropez</title>
+    <meta name="description"
+        content="midi. — prêt-à-porter et pièces d'exception, façonnés dans la lumière du Midi. Maison de mode fondée à Saint-Tropez.">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+
+    <link rel="preload" href="fonts/CormorantGaramond-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/DMSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="is-loading">
+
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header" data-header>
+        <div class="site-header__inner">
+            <button class="menu-toggle" data-menu-toggle type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__label">Menu</span>
+            </button>
+
+            <a href="/" class="wordmark" aria-label="midi. — accueil">midi.</a>
+
+            <div class="header-actions">
+                <div class="header-lang" data-header-lang>
+                    <span class="header-lang__current" aria-current="page">FR</span>
+                    <span class="header-lang__sep">/</span>
+                    <a href="en/index.html" class="header-lang__link">EN</a>
+                </div>
+                <a href="panier.html" class="header-link header-link--cart">Panier <span>(0)</span></a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="site-nav" class="site-nav" data-site-nav aria-hidden="true">
+        <ul class="site-nav__list">
+            <li class="site-nav__item"><a href="#collection">Collection</a></li>
+            <li class="site-nav__item"><a href="boutique.html">Boutique</a></li>
+            <li class="site-nav__item"><a href="#matieres">Matières</a></li>
+            <li class="site-nav__item"><a href="maison.html">La Maison</a></li>
+            <li class="site-nav__item"><a href="#quote">Savoir-faire</a></li>
+            <li class="site-nav__item"><a href="cercle.html">Le Cercle</a></li>
+            <li class="site-nav__item"><a href="contact.html">Contact</a></li>
+            <li class="site-nav__item"><a href="nos-adresses.html">Nos Adresses</a></li>
+        </ul>
+        <div class="site-nav__foot">
+            <p>Maison midi — Saint-Tropez, Golfe de Saint-Tropez</p>
+        </div>
+    </nav>
+
+    <main id="contenu">
+
+        <section class="hero" id="hero" data-hero>
+            <div class="hero__media" data-hero-media>
+                <picture>
+                    <source type="image/webp"
+                        srcset="images/hero-look-480.webp 480w, images/hero-look-768.webp 768w, images/hero-look-1024.webp 1024w, images/hero-look-1409.webp 1409w"
+                        sizes="100vw">
+                    <img src="images/hero-look.jpg"
+                        alt="Silhouette midi. sur le port de Saint-Tropez, chapeau de paille et tailleur écru"
+                        width="1409" height="1116" fetchpriority="high" decoding="async">
+                </picture>
+            </div>
+            <div class="hero__veil"></div>
+
+            <div class="hero__content">
+                <p class="eyebrow hero__eyebrow" data-hero-reveal>Maison midi — Saint-Tropez</p>
+                <h1 class="hero__title">
+                    <span class="hero__title-line-wrap"><span class="hero__title-line" data-hero-reveal>L'heure où la
+                            lumière</span></span>
+                    <span class="hero__title-line-wrap"><span class="hero__title-line" data-hero-reveal>ne ment
+                            plus.</span></span>
+                </h1>
+                <p class="hero__sub" data-hero-reveal>Prêt-à-porter et pièces d'exception, façonnées dans la lumière du
+                    Midi.</p>
+            </div>
+
+            <div class="hero__scroll-cue" data-hero-reveal>
+                <span>Défiler</span>
+                <i class="hero__scroll-cue-line"></i>
+            </div>
+
+            <div class="intro" data-intro aria-hidden="true">
+                <div class="intro__stage" data-intro-stage>
+                    <div class="intro__media" data-intro-media>
+                        <picture>
+                            <source type="image/webp"
+                                srcset="images/intro-linen-480.webp 480w, images/intro-linen-768.webp 768w, images/intro-linen-1024.webp 1024w, images/intro-linen-1122.webp 1122w"
+                                sizes="100vw">
+                            <img src="images/intro-linen.jpg"
+                                alt="Chemise en lin écru midi. posée sur la pierre chaude de Saint-Tropez" width="1122"
+                                height="1402" fetchpriority="high" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="intro__veil"></div>
+                    <p class="intro__wordmark" data-intro-wordmark>midi.</p>
+                    <div class="intro__cue" data-intro-cue>
+                        <span>Faites défiler pour entrer</span>
+                        <i class="intro__cue-line"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="manifesto" id="manifeste">
+            <p class="eyebrow" data-reveal>Le Manifeste</p>
+            <p class="manifesto__text" data-reveal>
+                Il existe une heure, entre le zénith et l'ombre, où la Méditerranée cesse
+                de scintiller pour <em>éblouir</em>. midi. naît de cette lumière crue — celle
+                qui ne pardonne rien, ni aux étoffes, ni aux silhouettes. Nous taillons pour
+                cette heure-là.
+            </p>
+        </section>
+
+        <section class="editorial" id="editorial" data-editorial>
+            <div class="editorial__frame" data-editorial-frame>
+                <div class="editorial__mask" data-editorial-mask>
+                    <picture>
+                        <source type="image/webp"
+                            srcset="images/editorial-wide-480.webp 480w, images/editorial-wide-768.webp 768w, images/editorial-wide-1024.webp 1024w, images/editorial-wide-1536.webp 1536w"
+                            sizes="(min-width: 1184px) 74rem, 100vw">
+                        <img src="images/editorial-wide.jpg"
+                            alt="Une silhouette midi. de dos, robe blanche et chapeau de paille, contemplant le port et la citadelle de Saint-Tropez"
+                            width="1536" height="1024" loading="lazy" decoding="async">
+                    </picture>
+                </div>
+            </div>
+            <div class="editorial__caption" data-editorial-caption>
+                <p class="eyebrow">L'Éditorial</p>
+                <p class="editorial__text">Là où d'autres cousent des ombres, midi. taille dans la lumière brute — sans
+                    retouche, sans mensonge.</p>
+            </div>
+        </section>
+
+        <section class="gallery" id="collection" data-gallery>
+            <div class="gallery__pin" data-gallery-pin>
+
+                <div class="gallery__heading">
+                    <p class="eyebrow">La Collection</p>
+                    <h2 class="gallery__title">Silhouettes d'Été</h2>
+                    <a href="boutique.html" class="text-link gallery__heading-link">Voir la boutique →</a>
+                </div>
+
+                <div class="gallery__viewport">
+                    <div class="gallery__track" data-gallery-track>
+
+                        <article class="look-card" data-look-card>
+                            <span class="look-card__ghost" data-look-ghost aria-hidden="true">01</span>
+                            <a href="produit-robe-meridienne.html" class="look-card__link">
+                                <div class="look-card__frame">
+                                    <picture>
+                                        <source type="image/webp"
+                                            srcset="images/look-01-400.webp 400w, images/look-01-600.webp 600w, images/look-01-900.webp 900w, images/look-01-1200.webp 1200w"
+                                            sizes="(min-width: 640px) 380px, 62vw">
+                                        <img src="images/look-01.jpg"
+                                            alt="Silhouette 01 — La Robe Méridienne, robe drapée écrue portée sur le port de Saint-Tropez"
+                                            width="1407" height="1118" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="look-card__glare" data-look-glare></div>
+                                </div>
+                                <div class="look-card__caption" data-look-caption>
+                                    <p class="look-card__index">Silhouette 01</p>
+                                    <p class="look-card__name">La Robe Méridienne</p>
+                                    <p class="look-card__note">Une seule couture, comme une ligne d'horizon.</p>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="look-card" data-look-card>
+                            <span class="look-card__ghost" data-look-ghost aria-hidden="true">02</span>
+                            <a href="produit-blazer-rade.html" class="look-card__link">
+                                <div class="look-card__frame">
+                                    <picture>
+                                        <source type="image/webp"
+                                            srcset="images/look-02-400.webp 400w, images/look-02-600.webp 600w, images/look-02-900.webp 900w, images/look-02-1200.webp 1200w"
+                                            sizes="(min-width: 640px) 380px, 62vw">
+                                        <img src="images/look-02.jpg"
+                                            alt="Silhouette 02 — Le Blazer Rade, blazer marine et short blanc portés sur le port de Saint-Tropez"
+                                            width="1409" height="1117" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="look-card__glare" data-look-glare></div>
+                                </div>
+                                <div class="look-card__caption" data-look-caption>
+                                    <p class="look-card__index">Silhouette 02</p>
+                                    <p class="look-card__name">Le Blazer Rade</p>
+                                    <p class="look-card__note">L'épaule droite, la mer calme.</p>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="look-card" data-look-card>
+                            <span class="look-card__ghost" data-look-ghost aria-hidden="true">03</span>
+                            <a href="produit-drape-solaire.html" class="look-card__link">
+                                <div class="look-card__frame">
+                                    <picture>
+                                        <source type="image/webp"
+                                            srcset="images/look-03-400.webp 400w, images/look-03-600.webp 600w, images/look-03-900.webp 900w, images/look-03-1200.webp 1200w"
+                                            sizes="(min-width: 640px) 380px, 62vw">
+                                        <img src="images/look-03.jpg"
+                                            alt="Silhouette 03 — Le Drapé Solaire, robe drapée épaule dénudée portée sur le port de Saint-Tropez"
+                                            width="1409" height="1117" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="look-card__glare" data-look-glare></div>
+                                </div>
+                                <div class="look-card__caption" data-look-caption>
+                                    <p class="look-card__index">Silhouette 03</p>
+                                    <p class="look-card__name">Le Drapé Solaire</p>
+                                    <p class="look-card__note">Un pli pour chaque heure du jour.</p>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="look-card" data-look-card>
+                            <span class="look-card__ghost" data-look-ghost aria-hidden="true">04</span>
+                            <a href="produit-chemise-hublot.html" class="look-card__link">
+                                <div class="look-card__frame">
+                                    <picture>
+                                        <source type="image/webp"
+                                            srcset="images/look-04-400.webp 400w, images/look-04-600.webp 600w, images/look-04-900.webp 900w, images/look-04-1200.webp 1200w"
+                                            sizes="(min-width: 640px) 380px, 62vw">
+                                        <img src="images/look-04.jpg"
+                                            alt="Silhouette 04 — La Chemise Hublot, chemisier écru à découpe ronde porté sur le port de Saint-Tropez"
+                                            width="1402" height="1122" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="look-card__glare" data-look-glare></div>
+                                </div>
+                                <div class="look-card__caption" data-look-caption>
+                                    <p class="look-card__index">Silhouette 04</p>
+                                    <p class="look-card__name">La Chemise Hublot</p>
+                                    <p class="look-card__note">Le col ouvert sur le large.</p>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="look-card" data-look-card>
+                            <span class="look-card__ghost" data-look-ghost aria-hidden="true">05</span>
+                            <a href="produit-manteau-zenith.html" class="look-card__link">
+                                <div class="look-card__frame">
+                                    <picture>
+                                        <source type="image/webp"
+                                            srcset="images/look-05-400.webp 400w, images/look-05-600.webp 600w, images/look-05-900.webp 900w, images/look-05-1200.webp 1200w"
+                                            sizes="(min-width: 640px) 380px, 62vw">
+                                        <img src="images/look-05.jpg"
+                                            alt="Silhouette 05 — Le Manteau Zénith, manteau écru ceinturé porté sur le port de Saint-Tropez"
+                                            width="1402" height="1122" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="look-card__glare" data-look-glare></div>
+                                </div>
+                                <div class="look-card__caption" data-look-caption>
+                                    <p class="look-card__index">Silhouette 05</p>
+                                    <p class="look-card__name">Le Manteau Zénith</p>
+                                    <p class="look-card__note">Une ombre portée, taillée dans la lumière.</p>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="look-card" data-look-card>
+                            <span class="look-card__ghost" data-look-ghost aria-hidden="true">06</span>
+                            <a href="produit-combinaison-or-brule.html" class="look-card__link">
+                                <div class="look-card__frame">
+                                    <picture>
+                                        <source type="image/webp"
+                                            srcset="images/look-06-400.webp 400w, images/look-06-600.webp 600w, images/look-06-900.webp 900w, images/look-06-1200.webp 1200w"
+                                            sizes="(min-width: 640px) 380px, 62vw">
+                                        <img src="images/look-06.jpg"
+                                            alt="Silhouette 06 — La Combinaison Or Brûlé, combinaison dorée nouée à la taille sur le port de Saint-Tropez"
+                                            width="1402" height="1122" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="look-card__glare" data-look-glare></div>
+                                </div>
+                                <div class="look-card__caption" data-look-caption>
+                                    <p class="look-card__index">Silhouette 06</p>
+                                    <p class="look-card__name">La Combinaison Or Brûlé</p>
+                                    <p class="look-card__note">La peau du soir, tissée à midi.</p>
+                                </div>
+                            </a>
+                        </article>
+
+                    </div>
+                </div>
+
+                <p class="gallery__hint" aria-hidden="true">Faites défiler pour révéler la collection</p>
+            </div>
+        </section>
+
+        <section class="matieres" id="matieres" data-matieres>
+            <div class="matieres__heading">
+                <p class="eyebrow" data-reveal>Les Matières</p>
+                <h2 class="matieres__title" data-reveal>Le lin, la soie, le laiton.</h2>
+                <p class="matieres__text" data-reveal>
+                    Chaque saison, trois matières seulement — choisies pour leur mémoire du
+                    soleil. Le lin de Normandie, tissé lâche pour respirer la chaleur du
+                    Golfe. La soie de Lyon, doublée à la main. Le laiton, martelé comme
+                    les ferrures des voiliers du port.
+                </p>
+            </div>
+            <div class="matieres__scene" data-matieres-scene>
+                <div class="matieres__layer matieres__layer--back" data-matieres-layer="back">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="images/matiere-lin-400.webp 400w, images/matiere-lin-600.webp 600w, images/matiere-lin-900.webp 900w, images/matiere-lin-1200.webp 1200w"
+                            sizes="(min-width: 900px) 58vw, 90vw">
+                        <img src="images/matiere-lin.jpg" alt="Gros plan sur le lin tissé lâche de midi." width="1402"
+                            height="1122" loading="lazy" decoding="async">
+                    </picture>
+                </div>
+                <div class="matieres__layer matieres__layer--mid" data-matieres-layer="mid">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="images/matiere-soie-400.webp 400w, images/matiere-soie-600.webp 600w, images/matiere-soie-900.webp 900w, images/matiere-soie-1200.webp 1200w"
+                            sizes="(min-width: 900px) 50vw, 80vw">
+                        <img src="images/matiere-soie.jpg" alt="Gros plan sur une doublure de soie midi." width="1402"
+                            height="1122" loading="lazy" decoding="async">
+                    </picture>
+                </div>
+                <div class="matieres__layer matieres__layer--front" data-matieres-layer="front">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="images/matiere-laiton-400.webp 400w, images/matiere-laiton-600.webp 600w, images/matiere-laiton-900.webp 900w, images/matiere-laiton-1200.webp 1200w"
+                            sizes="(min-width: 900px) 42vw, 70vw">
+                        <img src="images/matiere-laiton.jpg" alt="Gros plan sur une ferrure de laiton martelé midi."
+                            width="1402" height="1122" loading="lazy" decoding="async">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote" id="quote" data-quote>
+            <div class="quote__media" data-quote-media>
+                <picture>
+                    <source type="image/webp"
+                        srcset="images/quote-bg-480.webp 480w, images/quote-bg-768.webp 768w, images/quote-bg-1024.webp 1024w, images/quote-bg-1448.webp 1448w"
+                        sizes="100vw">
+                    <img src="images/quote-bg.jpg" alt="Détail de lin froissé dans la lumière du Midi" width="1448"
+                        height="1086" loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <div class="quote__veil"></div>
+            <blockquote class="quote__text" data-quote-text>
+                <p>La splendeur ne se drape pas.</p>
+                <p>Elle se révèle.</p>
+            </blockquote>
+        </section>
+
+        <section class="chiffres" id="chiffres">
+            <p class="eyebrow" data-reveal>L'Atelier en Chiffres</p>
+            <div class="chiffres__grid">
+                <div class="chiffres__item" data-stat>
+                    <p class="chiffres__num" data-stat-num>2019</p>
+                    <p class="chiffres__label">Naissance de la maison midi.</p>
+                </div>
+                <div class="chiffres__item" data-stat>
+                    <p class="chiffres__num" data-stat-num>6</p>
+                    <p class="chiffres__label">Silhouettes par collection, jamais plus</p>
+                </div>
+                <div class="chiffres__item" data-stat>
+                    <p class="chiffres__num" data-stat-num>18h</p>
+                    <p class="chiffres__label">Temps moyen de façonnage d'une pièce</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="maison" id="maison">
+            <div class="maison__media" data-maison-media>
+                <picture>
+                    <source type="image/webp"
+                        srcset="images/maison-atelier-480.webp 480w, images/maison-atelier-768.webp 768w, images/maison-atelier-1024.webp 1024w, images/maison-atelier-1448.webp 1448w"
+                        sizes="(min-width: 900px) 26vw, 90vw">
+                    <img src="images/maison-atelier.jpg"
+                        alt="Mains d'une artisane cousant dans l'atelier midi., Saint-Tropez" width="1448" height="1086"
+                        loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <div class="maison__col">
+                <p class="eyebrow" data-reveal>Le Savoir-Faire</p>
+                <h2 class="maison__title" data-reveal>Chaque pièce porte<br>la mémoire d'une main.</h2>
+            </div>
+            <div class="maison__col">
+                <p class="maison__text" data-reveal>
+                    Dans nos ateliers du Golfe de Saint-Tropez, chaque étoffe est coupée à la
+                    main par des artisans formés aux gestes des grandes maisons. Le fil, le
+                    drapé, la coupe : rien n'est laissé au hasard, tout est laissé au temps.
+                </p>
+                <p class="maison__text" data-reveal>
+                    midi. ne produit pas de collections. Elle façonne des heures — celles où
+                    la lumière, enfin, dit la vérité sur ce que l'on porte.
+                </p>
+                <a href="maison.html" class="text-link" data-reveal>Découvrir l'atelier →</a>
+            </div>
+        </section>
+
+        <section class="signature" id="signature" data-signature>
+            <div class="signature__pin" data-signature-pin>
+                <div class="signature__media" data-signature-media>
+                    <picture>
+                        <source type="image/webp"
+                            srcset="images/signature-bg-480.webp 480w, images/signature-bg-768.webp 768w, images/signature-bg-1024.webp 1024w, images/signature-bg-1448.webp 1448w"
+                            sizes="100vw">
+                        <img src="images/signature-bg.jpg"
+                            alt="Silhouette midi. de dos, lumière rasante sur le port de Saint-Tropez au coucher du soleil"
+                            width="1448" height="1086" loading="lazy" decoding="async">
+                    </picture>
+                    <div class="signature__glare" data-signature-glare></div>
+                </div>
+                <div class="signature__veil"></div>
+                <h2 class="signature__title" data-signature-title>
+                    <span class="signature__title-main">Il est midi.</span>
+                    <em class="signature__title-sub">L'heure de porter la lumière plutôt que de la suivre.</em>
+                </h2>
+            </div>
+        </section>
+
+        <section class="cercle" id="cercle">
+            <p class="eyebrow" data-reveal>Le Cercle midi</p>
+            <h2 class="cercle__title" data-reveal>Soyez informée avant tout le monde.</h2>
+            <form class="cercle__form" data-reveal>
+                <label class="visually-hidden" for="cercle-email">Adresse email</label>
+                <input class="cercle__input" id="cercle-email" type="email" placeholder="Votre adresse email" required>
+                <button class="cercle__submit" type="submit">Rejoindre</button>
+            </form>
+            <p class="cercle__legal">En vous inscrivant, vous acceptez de recevoir les actualités de la maison midi.</p>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__top">
+            <a href="/" class="wordmark wordmark--footer">midi.</a>
+            <div class="site-footer__cols">
+                <div class="site-footer__col">
+                    <p class="site-footer__title">La Maison</p>
+                    <a href="#collection">Collection</a>
+                    <a href="boutique.html">Boutique</a>
+                    <a href="maison.html">Savoir-faire</a>
+                    <a href="nos-adresses.html">Nos Adresses</a>
+                </div>
+                <div class="site-footer__col">
+                    <p class="site-footer__title">Assistance</p>
+                    <a href="#">Livraison</a>
+                    <a href="#">Retours</a>
+                    <a href="contact.html">Nous contacter</a>
+                </div>
+                <div class="site-footer__col">
+                    <p class="site-footer__title">Suivre</p>
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <p>© <span data-year></span> Maison midi — Saint-Tropez</p>
+            <p>Mentions légales · CGV · Confidentialité</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

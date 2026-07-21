@@ -1,0 +1,210 @@
+/* ==========================================================================
+   midi. — contact.css
+   Styles et mise en page de la page Contact — volontairement courte et
+   rapide (pas de pin, pas de scroll horizontal) : à contre-courant du
+   reste du site, qui joue la carte du long récit animé.
+   ========================================================================== */
+
+/* ---------------------------------- Split hero + coordonnées ---------------------------------- */
+
+.ct-split {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    min-height: 100vh;
+    min-height: 100dvh;
+    min-height: 100svh;
+}
+
+.ct-split__media {
+    position: relative;
+    overflow: hidden;
+    min-height: 22rem;
+}
+
+.ct-split__media picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ct-split__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    will-change: clip-path;
+}
+
+.ct-split__panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: calc(var(--header-h) + 3rem) var(--pad-inline) 3rem;
+    background: var(--c-ombre);
+}
+
+.ct-split__title {
+    font-family: var(--f-display);
+    font-weight: 300;
+    font-size: clamp(2.4rem, 4vw + 1.4rem, 4.2rem);
+    line-height: 1.08;
+}
+
+.ct-split__sub {
+    color: var(--c-text-dim);
+    max-width: 26rem;
+}
+
+.ct-info {
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1.25rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--c-line);
+    border-bottom: 1px solid var(--c-line);
+    perspective: 900px;
+}
+
+.ct-info__item {
+    transform-style: preserve-3d;
+}
+
+.ct-info__label {
+    font-size: var(--fs-caption);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--c-or);
+    margin-bottom: 0.4rem;
+}
+
+.ct-info__value {
+    color: var(--c-solaire);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.ct-info__link {
+    text-decoration: none;
+    transition: color 0.3s var(--ease-out);
+}
+
+.ct-info__link:hover {
+    color: var(--c-or);
+}
+
+.ct-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 30rem;
+}
+
+.ct-form__input {
+    padding: 0.85rem 0.1rem;
+    border-bottom: 1px solid var(--c-line);
+    resize: none;
+    transition: border-color 0.3s var(--ease-out);
+}
+
+.ct-form__input:focus {
+    border-color: var(--c-or);
+}
+
+.ct-form__input::placeholder {
+    color: var(--c-text-dim);
+}
+
+.ct-form__textarea {
+    font-family: inherit;
+}
+
+.ct-form__submit {
+    align-self: flex-start;
+    margin-top: 0.4rem;
+    padding: 0.9rem 1.6rem;
+    border: 1px solid var(--c-or);
+    border-radius: 999px;
+    font-size: var(--fs-caption);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--c-or);
+    cursor: pointer;
+    transition: background-color 0.3s var(--ease-out), color 0.3s var(--ease-out);
+}
+
+.ct-form__submit:hover {
+    background: var(--c-or);
+    color: var(--c-ombre);
+}
+
+@media (max-width: 900px) {
+    .ct-split {
+        grid-template-columns: 1fr;
+    }
+
+    .ct-split__media {
+        min-height: 40vh;
+        order: -1;
+    }
+
+    .ct-split__panel {
+        padding-top: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ct-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------------------------------- Galerie courte ---------------------------------- */
+
+.ct-gallery {
+    padding: var(--space-section) var(--pad-inline);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.ct-gallery__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(1rem, 2.5vw, 1.75rem);
+    max-width: 78rem;
+    margin-inline: auto;
+}
+
+.ct-gallery__item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.ct-gallery__item picture {
+    display: block;
+    width: 100%;
+}
+
+.ct-gallery__item img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 2px;
+    border: 1px solid var(--c-line);
+}
+
+.ct-gallery__item figcaption {
+    font-size: var(--fs-caption);
+    letter-spacing: 0.06em;
+    color: var(--c-text-dim);
+}
+
+@media (max-width: 680px) {
+    .ct-gallery__row {
+        grid-template-columns: 1fr;
+    }
+}

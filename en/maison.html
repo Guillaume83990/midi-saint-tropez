@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>The House — midi., Saint-Tropez</title>
+    <meta name="description"
+        content="The story of midi.: a founder, an atelier in the Gulf of Saint-Tropez, a conviction — cutting for the most honest hour of the day.">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+
+    <link rel="preload" href="../fonts/CormorantGaramond-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/DMSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/maison.css">
+</head>
+
+<body class="is-loading">
+
+    <a class="skip-link" href="#contenu">Skip to content</a>
+
+    <header class="site-header" data-header>
+        <div class="site-header__inner">
+            <button class="menu-toggle" data-menu-toggle type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__label">Menu</span>
+            </button>
+
+            <a href="index.html" class="wordmark" aria-label="midi. — home">midi.</a>
+
+            <div class="header-actions">
+                <div class="header-lang" data-header-lang>
+                    <a href="../maison.html" class="header-lang__link">FR</a>
+                    <span class="header-lang__sep">/</span>
+                    <span class="header-lang__current" aria-current="page">EN</span>
+                </div>
+                <a href="panier.html" class="header-link header-link--cart">Cart <span>(0)</span></a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="site-nav" class="site-nav" data-site-nav aria-hidden="true">
+        <ul class="site-nav__list">
+            <li class="site-nav__item"><a href="index.html#collection">Collection</a></li>
+            <li class="site-nav__item"><a href="boutique.html">Shop</a></li>
+            <li class="site-nav__item"><a href="index.html#matieres">Materials</a></li>
+            <li class="site-nav__item"><a href="maison.html">The House</a></li>
+            <li class="site-nav__item"><a href="index.html#quote">Craft</a></li>
+            <li class="site-nav__item"><a href="cercle.html">The Circle</a></li>
+            <li class="site-nav__item"><a href="contact.html">Contact</a></li>
+            <li class="site-nav__item"><a href="nos-adresses.html">Our Addresses</a></li>
+        </ul>
+        <div class="site-nav__foot">
+            <p>Maison midi — Saint-Tropez, Gulf of Saint-Tropez</p>
+        </div>
+    </nav>
+
+    <main id="contenu">
+
+        <section class="mh-hero" id="mh-hero" data-mh-hero>
+            <div class="mh-hero__media" data-mh-hero-media>
+                <picture>
+                    <source type="image/webp"
+                        srcset="../images/maison-hero-480.webp 480w, ../images/maison-hero-768.webp 768w, ../images/maison-hero-1024.webp 1024w, ../images/maison-hero-1448.webp 1448w"
+                        sizes="100vw">
+                    <img src="../images/maison-hero.jpg"
+                        alt="Table of the midi. atelier in front of a window open to the Gulf of Saint-Tropez"
+                        width="1448" height="1086" fetchpriority="high" decoding="async">
+                </picture>
+            </div>
+            <div class="mh-hero__veil"></div>
+            <div class="mh-hero__content">
+                <p class="eyebrow" data-mh-reveal>The House</p>
+                <h1 class="mh-hero__title" data-mh-reveal>One light,<br>one idea,<br>six silhouettes.</h1>
+                <p class="mh-hero__sub" data-mh-reveal>midi. was born of a simple conviction: fashion should be
+                    judged in the most honest hour of the day.</p>
+            </div>
+        </section>
+
+        <section class="fondatrice" id="fondatrice" data-fondatrice>
+            <div class="fondatrice__portrait" data-fondatrice-portrait>
+                <picture>
+                    <source type="image/webp"
+                        srcset="../images/fondatrice-480.webp 480w, ../images/fondatrice-768.webp 768w, ../images/fondatrice-1024.webp 1024w, ../images/fondatrice-1402.webp 1402w"
+                        sizes="(min-width: 780px) 42vw, 90vw">
+                    <img src="../images/fondatrice.jpg"
+                        alt="Camille Ferrand, founder of midi., in the Saint-Tropez atelier" width="1402" height="1122"
+                        loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <div class="fondatrice__text" data-fondatrice-text>
+                <p class="eyebrow">The Founder</p>
+                <h2 class="fondatrice__name">Camille Ferrand</h2>
+                <p class="fondatrice__bio">
+                    Trained in the Parisian ateliers, Camille Ferrand returned in 2019
+                    to her native Gulf with one precise frustration: fashion is drawn
+                    under studio lighting, never under the light that actually
+                    matters. midi. was born of that observation — a house that cuts,
+                    fits and presents every piece at the hour when the sun leaves
+                    nothing hidden.
+                </p>
+                <blockquote class="fondatrice__quote">
+                    "I no longer wanted to dress imaginary silhouettes. I wanted to
+                    dress the light I know."
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="frise" id="frise" data-frise>
+            <div class="frise__pin" data-frise-pin>
+                <div class="frise__heading">
+                    <p class="eyebrow">Since 2019</p>
+                    <h2 class="frise__title">Five years, one trajectory.</h2>
+                </div>
+
+                <div class="frise__viewport">
+                    <svg class="frise__line" data-frise-line viewBox="0 0 2200 4" preserveAspectRatio="none"
+                        aria-hidden="true">
+                        <line x1="0" y1="2" x2="2200" y2="2" />
+                    </svg>
+
+                    <div class="frise__track" data-frise-track>
+                        <article class="frise__item" data-frise-item>
+                            <span class="frise__dot"></span>
+                            <p class="frise__year">2019</p>
+                            <div class="frise__card">
+                                <h3>Birth</h3>
+                                <p>First atelier, six silhouettes, one conviction.</p>
+                            </div>
+                        </article>
+
+                        <article class="frise__item" data-frise-item>
+                            <span class="frise__dot"></span>
+                            <p class="frise__year">2020</p>
+                            <div class="frise__card">
+                                <h3>The Call of Linen</h3>
+                                <p>The first pieces are hand-sewn, tailored to the Gulf.</p>
+                            </div>
+                        </article>
+
+                        <article class="frise__item" data-frise-item>
+                            <span class="frise__dot"></span>
+                            <p class="frise__year">2022</p>
+                            <div class="frise__card">
+                                <h3>First Boutique</h3>
+                                <p>A single address, open on the port of Saint-Tropez.</p>
+                            </div>
+                        </article>
+
+                        <article class="frise__item" data-frise-item>
+                            <span class="frise__dot"></span>
+                            <p class="frise__year">2024</p>
+                            <div class="frise__card">
+                                <h3>The midi. Circle</h3>
+                                <p>A confidential list of loyal clients, informed first.</p>
+                            </div>
+                        </article>
+
+                        <article class="frise__item" data-frise-item>
+                            <span class="frise__dot"></span>
+                            <p class="frise__year">2026</p>
+                            <div class="frise__card">
+                                <h3>Today</h3>
+                                <p>Six silhouettes per season. Never more.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="valeurs" id="valeurs">
+            <p class="eyebrow" data-reveal>What Never Changes</p>
+            <div class="valeurs__grid">
+                <article class="valeurs__item" data-valeur>
+                    <p class="valeurs__num">01</p>
+                    <h3 class="valeurs__title">Light</h3>
+                    <p class="valeurs__text">We retouch nothing. What you see at noon is what you will wear.</p>
+                </article>
+                <article class="valeurs__item" data-valeur>
+                    <p class="valeurs__num">02</p>
+                    <h3 class="valeurs__title">Material</h3>
+                    <p class="valeurs__text">Three materials per season, chosen for how they remember the sun.
+                        Never one more.</p>
+                </article>
+                <article class="valeurs__item" data-valeur>
+                    <p class="valeurs__num">03</p>
+                    <h3 class="valeurs__title">Rarity</h3>
+                    <p class="valeurs__text">Six silhouettes. No restocking, no reissues.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="atelier" id="atelier" data-atelier>
+            <div class="atelier__media" data-atelier-media>
+                <picture>
+                    <source type="image/webp"
+                        srcset="../images/atelier-lieu-480.webp 480w, ../images/atelier-lieu-768.webp 768w, ../images/atelier-lieu-1024.webp 1024w, ../images/atelier-lieu-1402.webp 1402w"
+                        sizes="(min-width: 780px) 55vw, 90vw">
+                    <img src="../images/atelier-lieu.jpg"
+                        alt="Façade of the midi. atelier in the Gulf of Saint-Tropez, sign above the door" width="1402"
+                        height="1122" loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <div class="atelier__text">
+                <p class="eyebrow" data-reveal>The Atelier</p>
+                <h2 class="atelier__title" data-reveal>A place, not a factory.</h2>
+                <p class="atelier__desc" data-reveal>
+                    Ten hands, one address. The midi. atelier sits in a bastide in the
+                    Gulf of Saint-Tropez, windows open to the hills — the light that
+                    dresses our pieces is the same light on the cutting table.
+                </p>
+                <p class="atelier__address" data-reveal>Chemin des Salins, Saint-Tropez — by appointment</p>
+            </div>
+        </section>
+
+        <section class="mosaique" id="mosaique">
+            <p class="eyebrow" data-reveal>Inside the Atelier</p>
+            <div class="mosaique__grid" data-mosaique>
+                <figure class="mosaique__item" data-mosaique-item>
+                    <picture>
+                        <source type="image/webp"
+                            srcset="../images/atelier-01-320.webp 320w, ../images/atelier-01-480.webp 480w, ../images/atelier-01-640.webp 640w, ../images/atelier-01-900.webp 900w"
+                            sizes="(min-width: 780px) 20vw, 45vw">
+                        <img src="../images/atelier-01.jpg" alt="Cutting table and canvas patterns" width="1402"
+                            height="1122" loading="lazy" decoding="async">
+                    </picture>
+                    <figcaption>The pattern table</figcaption>
+                </figure>
+                <figure class="mosaique__item" data-mosaique-item>
+                    <picture>
+                        <source type="image/webp"
+                            srcset="../images/atelier-02-320.webp 320w, ../images/atelier-02-480.webp 480w, ../images/atelier-02-640.webp 640w, ../images/atelier-02-900.webp 900w"
+                            sizes="(min-width: 780px) 20vw, 45vw">
+                        <img src="../images/atelier-02.jpg"
+                            alt="Hand guiding thread on an antique Singer sewing machine" width="1402" height="1122"
+                            loading="lazy" decoding="async">
+                    </picture>
+                    <figcaption>Thread and needle</figcaption>
+                </figure>
+                <figure class="mosaique__item" data-mosaique-item>
+                    <picture>
+                        <source type="image/webp"
+                            srcset="../images/atelier-03-320.webp 320w, ../images/atelier-03-480.webp 480w, ../images/atelier-03-640.webp 640w, ../images/atelier-03-900.webp 900w"
+                            sizes="(min-width: 780px) 20vw, 45vw">
+                        <img src="../images/atelier-03.jpg" alt="Rolls of linen and silk sorted by shade" width="1402"
+                            height="1122" loading="lazy" decoding="async">
+                    </picture>
+                    <figcaption>The material reserve</figcaption>
+                </figure>
+                <figure class="mosaique__item" data-mosaique-item>
+                    <picture>
+                        <source type="image/webp"
+                            srcset="../images/atelier-04-320.webp 320w, ../images/atelier-04-480.webp 480w, ../images/atelier-04-640.webp 640w, ../images/atelier-04-900.webp 900w"
+                            sizes="(min-width: 780px) 20vw, 45vw">
+                        <img src="../images/atelier-04.jpg"
+                            alt="Linen dress hanging in front of a window open to the Gulf of Saint-Tropez" width="1122"
+                            height="1402" loading="lazy" decoding="async">
+                    </picture>
+                    <figcaption>The last light</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="mh-cta">
+            <p class="eyebrow" data-reveal>See Also</p>
+            <h2 class="mh-cta__title" data-reveal>Discover the collection</h2>
+            <a href="index.html#collection" class="text-link" data-reveal>See the six silhouettes →</a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__top">
+            <a href="index.html" class="wordmark wordmark--footer">midi.</a>
+            <div class="site-footer__cols">
+                <div class="site-footer__col">
+                    <p class="site-footer__title">The House</p>
+                    <a href="index.html#collection">Collection</a>
+                    <a href="boutique.html">Shop</a>
+                    <a href="maison.html">Craft</a>
+                    <a href="nos-adresses.html">Our Addresses</a>
+                </div>
+                <div class="site-footer__col">
+                    <p class="site-footer__title">Support</p>
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="site-footer__col">
+                    <p class="site-footer__title">Follow</p>
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <p>© <span data-year></span> Maison midi — Saint-Tropez</p>
+            <p>Legal Notice · Terms · Privacy</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/maison.js"></script>
+</body>
+
+</html>

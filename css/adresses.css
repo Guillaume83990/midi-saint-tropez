@@ -1,0 +1,189 @@
+/* ==========================================================================
+   midi. — adresses.css
+   Deux fiches lieu (Atelier / Boutique), chacune avec une épingle qui
+   tombe en 3D et rebondit à l'arrivée — signature propre à cette page,
+   littéralement une "adresse" qui se pose sur la carte.
+   ========================================================================== */
+
+.na-hero {
+    padding: calc(var(--header-h) + 3.5rem) var(--pad-inline) 3rem;
+    max-width: 44rem;
+    margin-inline: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.na-hero__title {
+    font-family: var(--f-display);
+    font-weight: 300;
+    font-size: var(--fs-hero);
+    line-height: 1.05;
+}
+
+.na-hero__sub {
+    max-width: 30rem;
+    color: var(--c-text-dim);
+}
+
+/* ---------------------------------- Fiches lieu ---------------------------------- */
+
+.na-locations {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(4rem, 8vw, 7rem);
+    padding: 1rem var(--pad-inline) var(--space-section);
+    max-width: 78rem;
+    margin-inline: auto;
+}
+
+.na-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: center;
+}
+
+.na-card--reverse .na-card__media {
+    order: 2;
+}
+
+.na-card--reverse .na-card__info {
+    order: 1;
+}
+
+.na-card__media {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: 2px;
+    border: 1px solid var(--c-line);
+    box-shadow: 0 40px 80px -40px rgba(0, 0, 0, 0.75);
+}
+
+.na-card__media picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.na-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    will-change: clip-path;
+}
+
+.na-card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.na-card__pin-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.6rem;
+    perspective: 700px;
+    min-height: 2.4rem;
+}
+
+.na-card__pin {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    flex: none;
+    margin-bottom: 0.35rem;
+    border-radius: 50% 50% 50% 0;
+    background: var(--c-or);
+    transform: rotate(-45deg);
+    will-change: transform, opacity;
+}
+
+.na-card__pin::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--c-ombre);
+}
+
+.na-card__name {
+    font-family: var(--f-display);
+    font-weight: 300;
+    font-style: italic;
+    font-size: var(--fs-xl);
+}
+
+.na-card__address {
+    color: var(--c-solaire);
+}
+
+.na-card__hours {
+    font-size: var(--fs-caption);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--c-or);
+}
+
+.na-card__text {
+    color: var(--c-text-dim);
+    max-width: 28rem;
+}
+
+.na-card__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.na-card__contact a {
+    color: var(--c-text-dim);
+    transition: color 0.3s var(--ease-out);
+}
+
+.na-card__contact a:hover {
+    color: var(--c-or);
+}
+
+@media (max-width: 780px) {
+    .na-card {
+        grid-template-columns: 1fr;
+    }
+
+    .na-card--reverse .na-card__media,
+    .na-card--reverse .na-card__info {
+        order: initial;
+    }
+
+    .na-card__media {
+        max-width: 26rem;
+        margin-inline: auto;
+    }
+}
+
+/* ---------------------------------- CTA de clôture ---------------------------------- */
+
+.na-cta {
+    padding: var(--space-section) var(--pad-inline) calc(var(--space-section) * 1.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: var(--c-ombre-soft);
+}
+
+.na-cta__title {
+    font-family: var(--f-display);
+    font-weight: 300;
+    font-style: italic;
+    font-size: var(--fs-xl);
+    max-width: 32rem;
+}
